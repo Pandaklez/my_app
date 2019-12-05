@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for question in questions %}
+    <div class="row">
+        <p class="col-md-6">{{question.text}}</p>
+        <table class="col-md-8">
+            <tr>
+                <td><input class="radio" type="radio" name="q{{ question.id }}" value=5></td>
+                <td><input class="radio" type="radio" name="q{{ question.id }}" value=4></td>
+                <td><input class="radio" type="radio" name="q{{ question.id }}" value=3></td>
+                <td><input class="radio" type="radio" name="q{{ question.id }}" value=2></td>
+                <td><input class="radio" type="radio" name="q{{ question.id }}" value=1></td>
+            </tr>
+            <tr>
+                <td>отлично</td>
+                <td>хорошо</td>
+                <td>норм</td>
+                <td>плохо</td>
+                <td>ужасно</td>
+            </tr>
+        </table>
+    </div>
+{% endfor %}
+
+{% endblock %}

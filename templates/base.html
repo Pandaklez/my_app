@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Linguistic Survey</title>
+<!--	<link rel="stylesheet" href="static/style.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- import plugin script -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+  </head>
+<body>
+
+<img src="{{url_for('static', filename='mountains.jpg')}}" />
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+    <a class="navbar-brand" href="/">Суждения о граматичности</a>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+{% block content %}{% endblock %}
+<div class="container">
+    <hr />
+        <div class="text-center center-block">
+            <p class="txt-railway">- My website 2019 -</p>
+            <br />
+	            <a href="mailto:cromanec@mail.ru"><span class="glyphicon glyphicon-envelope"></span></a>
+		</div>
+    <hr />
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
